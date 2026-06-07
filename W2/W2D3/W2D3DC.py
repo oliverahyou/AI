@@ -8,4 +8,3 @@ for number_one in list_of_numbers:
     if number_two in seen:
         print(f"{number_one} and {number_two} sums up to {target_number}")  
     seen.add(number_one)
-print(seen)
