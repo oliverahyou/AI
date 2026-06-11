@@ -1,0 +1,9 @@
+AI automation: Customer sentiment analysis + dashboard Sentiment analysis
+
+Proof of concept: Collect, analyse and provide conclusion via dashboard of how customers feel for a service/produce be it positive or negative
+
+Data collection method of customer feedback: Open end questions
+
+Preprocessing of customer feedback: Open-end: Lowercase, grammar, spelling, punctuation and other special characters such as smileys
+
+Processing of customer feedback: Use of Natural Language Processing
