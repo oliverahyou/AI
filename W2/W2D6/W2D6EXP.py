@@ -44,3 +44,16 @@ print(f'{davids_dog.name} can jump {jump(davids_dog.height)} cm high!')
 print(f'{sarahs_dog.name} can jump {jump(sarahs_dog.height)} cm high!')
 
 #Exercise 3
+class Song:
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+stairway = Song(["There’s a lady who's sure", "all that glitters is gold", "and she’s buying a stairway to heaven"])
+
+def sing_me_a_song():
+    for i in stairway.lyrics:
+        print(i)
+sing_me_a_song()
+
+#Exercise 4
+class Zoo:
+    
