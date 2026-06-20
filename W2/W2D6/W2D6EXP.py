@@ -56,4 +56,12 @@ sing_me_a_song()
 
 #Exercise 4
 class Zoo:
-    
+    def __init__(self, zoo_name):
+        Zoo.name = zoo_name
+        Zoo.animals = []
+def add_animal(self, new_animal):
+    self.animals.append(new_animal)
+
+zoo.add_animal
+
+
