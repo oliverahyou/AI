@@ -62,6 +62,5 @@ class Zoo:
 def add_animal(self, new_animal):
     self.animals.append(new_animal)
 
-zoo.add_animal
 
 
