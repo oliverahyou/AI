@@ -24,14 +24,14 @@ def num(n):
     else:
         print(f"{n} is greater than 100")
 num(random_number)
-Exercise 5: Let’s Create Some Personalized Shirts!
+#Exercise 5: Let’s Create Some Personalized Shirts!
 def make_shirt(size="L", text="I love Python"):
     print(f"The shirt size is {size} and it has the text: '{text}' printed on it.")
 make_shirt()
 make_shirt(size="M")
 make_shirt(size="S", text="Python is awesome!")
     #Exercise 6: Magicians…
-# magician_names =  ['Harry Houdini', 'David Blaine', 'Criss Angel']
+magician_names =  ['Harry Houdini', 'David Blaine', 'Criss Angel']
 def show_magicians(magician_names):
     for name in magician_names:
         print(name)
