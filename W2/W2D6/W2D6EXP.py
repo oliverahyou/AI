@@ -55,12 +55,28 @@ def sing_me_a_song():
 sing_me_a_song()
 
 #Exercise 4
+#Step 1
+
 class Zoo:
     def __init__(self, zoo_name):
-        Zoo.name = zoo_name
-        Zoo.animals = []
-def add_animal(self, new_animal):
-    self.animals.append(new_animal)
+        self.name = zoo_name
+        self.animals = animals
+animals = []
+def add_animal(new_animal):
+        animals.append(new_animal)
+add_animal('Lion')
+add_animal('Lion')
 
+def get_animals():
+    print(animals)
+get_animals()
 
+def sell_animal(animal_sold):
+    animals.remove(animal_sold)
+sell_animal('Lion')
+get_animals()
 
+def sort_animals():
+    animals.sort()
+
+#map()?
