@@ -1,0 +1,30 @@
+1. Extract and Clean the Text (The Containment Phase)
+Raw HTML contains heavy boilerplate (scripts, headers) that can confuse machine learning models. 
+You must parse and extract only the meaningful open-end text.
+
+2. Convert into ML-Workable Files
+Once the text is extracted, you need to store it in a format readable by your ML pipeline.
+
+For NLP & Large Language Models (LLMs): 
+Convert the cleaned text into JSONL (JSON Lines) or Markdown. 
+Each line represents a single open-end response with associated metadata.
+
+For tabular data (e.g., sentiment analysis or classification): 
+Map the extracted text into a CSV or Pandas DataFrame, where each row is a response.
+
+For semantic search or RAG (Retrieval-Augmented Generation): 
+Chunk the text and store the parsed strings in a vector database like Pinecone or Qdrant.
+
+3. Normalize and Preprocess for Model Consumption
+Machine learning models cannot work directly with raw strings; 
+you must preprocess the converted text.
+
+Tokenization & Stopword Removal: 
+Use libraries like spaCy or NLTK to break text into tokens and strip out punctuation.
+
+Embedding conversion: 
+Convert the text into numerical vectors using pre-trained models (e.g., Hugging Face's transformers or OpenAI's text-embedding-3).
+
+Zero-shot prompting: 
+If you are using an LLM to categorize your open-end responses, you can bypass manual coding by writing a prompt to process your JSON-converted files and categorize them automatically.
+
