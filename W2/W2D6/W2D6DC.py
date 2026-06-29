@@ -1,25 +1,22 @@
-#Step 1 and 2
+farm_animals = {}
 class Farm:
     def __init__(self, farm_name):
         self.name = farm_name
         self.animals = farm_animals
-farm_animals = {}
+    def add_animal(self, animal_type, count = 1):
+        if animal_type not in farm_animals:
+            farm_animals[animal_type] = 0
+            farm_animals[animal_type] += count
+    def get_info(self):
+        print("McDonald's Farm")
+        print('')
+        for key, value in farm_animals.items():
+            print(f"{key}: {value}")
+        print('E-I-E-I-0!')
 
-#Step 3
-def add_animal(animal_type, count = 1):
-    if animal_type not in farm_animals:
-        farm_animals[animal_type] = 0
-        farm_animals[animal_type] += count
-    print(farm_animals) 
-add_animal('goat', 5)
-add_animal('cow')
-add_animal('chicken', 4)
+mcdonalds_farm = Farm("McDonald's Farm")    
+mcdonalds_farm.add_animal('cow', 4)
+mcdonalds_farm.add_animal('chicken', 15)
+mcdonalds_farm.get_info()
 
-#Step 4
-def get_info():
-    print("McDonald's Farm")
-    print('')
-    for key, value in farm_animals.items():
-        print(f"{key}: {value}")
-    print('E-I-E-I-0!')
-get_info()
+
