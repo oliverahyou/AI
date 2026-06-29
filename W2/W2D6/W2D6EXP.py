@@ -56,27 +56,37 @@ sing_me_a_song()
 
 #Exercise 4
 #Step 1
+animals = []
+sorted_dict = {}
 
 class Zoo:
     def __init__(self, zoo_name):
         self.name = zoo_name
         self.animals = animals
-animals = []
-def add_animal(new_animal):
-        animals.append(new_animal)
-add_animal('Lion')
-add_animal('Lion')
+    def add_animal(self, *args):
+        for new_animal in args:
+            animals.append(new_animal)
+    def get_animals(self):
+        print(animals)
+    def sell_animal(self, animal_sold):
+        animals.remove(animal_sold)
+    def sort_animals(self):
+        sorted_animals = sorted(animals)
+        print(sorted_animals)
+        for animal in sorted_animals:
+            first_letter = animal[0].upper()
+            if first_letter not in sorted_dict:
+                sorted_dict[first_letter] = []
+                sorted_dict[first_letter].append(animal)
+    def get_groups(self):
+        print(sorted_dict)
 
-def get_animals():
-    print(animals)
-get_animals()
+#Step 2
+mauritius_safari = Zoo('Mauritius Safari')
 
-def sell_animal(animal_sold):
-    animals.remove(animal_sold)
-sell_animal('Lion')
-get_animals()
-
-def sort_animals():
-    animals.sort()
-
-#map()?
+#Step 3
+mauritius_safari.add_animal('Lion', 'Giraffe', 'Lion', 'Monkey')
+mauritius_safari.get_animals()
+mauritius_safari.sell_animal('Monkey')
+mauritius_safari.sort_animals()
+mauritius_safari.get_groups()
