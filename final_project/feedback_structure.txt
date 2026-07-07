@@ -3,4 +3,4 @@ Questions=q1,q2,q3,q4
 q1='What is your gender?' answer=male, female
 q2='How old are you?' answer=18-24, 25-44, 45-64, 65+
 q3='Which brand of coffee do you prefer?' answer=A, B
-q4='Please share your thoughts ono coffee (q3)' answer=Open-End
+q4='Please share your thoughts on coffee (q3)' answer=Open-End
