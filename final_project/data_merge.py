@@ -10,11 +10,11 @@ age_path = os.path.join(script_dir, "age_data.csv")
 brand_path = os.path.join(script_dir, "brand_data.csv")
 feedback_path = os.path.join(script_dir, "feedback_data.csv")
 
-# Read each CSV as single column, no header
-gender_df = pd.read_csv(gender_path, header=None, names=["gender"])
-age_df = pd.read_csv(age_path, header=None, names=["age"])
-brand_df = pd.read_csv(brand_path, header=None, names=["brand"])
-feedback_df = pd.read_csv(feedback_path, header=None, names=["feedback"])
+# Read each CSV as single column
+gender_df = pd.read_csv(gender_path)
+age_df = pd.read_csv(age_path)
+brand_df = pd.read_csv(brand_path)
+feedback_df = pd.read_csv(feedback_path)
 
 # Merge side by side
 combined_df = pd.concat([gender_df, age_df, brand_df, feedback_df], axis=1)
