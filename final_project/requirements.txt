@@ -18,6 +18,5 @@ Minimum Viable Product features:
 1. Synthetic Data generation of 1000 entries
 2. Data preprocessing using NLP (Tokenization, Normalization, Noise handling)
 3. Machine Learning Modeling
-3. Database(Creation and manipulation) using PostgreSQL
 4. Interactive dashboard of visualization of database
 

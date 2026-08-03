@@ -1,4 +1,4 @@
-AI automation: Customer sentiment analysis + dashboard Sentiment analysis
+Customer sentiment analysis + dashboard Sentiment analysis
 
 Proof of concept: Collect, analyse and provide conclusion via dashboard of how customers feel for a service/produce be it positive or negative
 
