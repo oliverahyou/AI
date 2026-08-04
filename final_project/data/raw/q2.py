@@ -5,7 +5,7 @@ import csv
 age_values = random.choices(
     ["18-24", "25-44", "45-64", "65+"],
     weights=[20, 35, 30, 15],
-    k=1500
+    k=250
 )
 print(age_values[:10])
 

@@ -3,20 +3,12 @@ Final Project Scope
 Project Title: Customer Feedback Sentiment Analysis
 Goal: Determine what user thinks on a product or service based on input given during Feedback
 
-Requirements:
-1.Data clean and manipulate with Pandas and Numpy
-2.Database Management with SQL/PostgreSQL
-3.Statistical Analysis and Modeling with Python
-4.Machine Learning with Python
-5.Data Collection and Web Scraping with API and Python
-6.Building an Interactive Dashboard
-
 Project-specific Features:
 Use of Natural Language Processing (NLP)
 
 Minimum Viable Product features:
 1. Synthetic Data generation of 1000 entries
-2. Data preprocessing using NLP (Tokenization, Normalization, Noise handling)
+2. Data preprocessing using NLP
 3. Machine Learning Modeling
 4. Interactive dashboard of visualization of database
 

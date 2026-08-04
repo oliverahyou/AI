@@ -6,7 +6,7 @@ import csv
 gender_values = random.choices(
     ["male", "female"],
     weights=[49, 51],
-    k=1500
+    k=250
 )
 with open("gender_data.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)

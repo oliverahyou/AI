@@ -96,7 +96,7 @@ def typo(sentence):
 
 responses = set()
 
-while len(responses) < 250:
+while len(responses) < 1500:
 
     style = random.random()
 

@@ -6,7 +6,7 @@ import csv
 brand_values = random.choices(
     ["A", "B"],
     weights=[44, 56],
-    k=250
+    k=1500
 )
 
 with open("brand_data.csv", "w", newline="", encoding="utf-8") as f:
