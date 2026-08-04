@@ -125,7 +125,7 @@ while len(responses) < 250:
 
     responses.add(text.strip())
 
-with open("coffee_x_feedback_1500.csv","w",newline="",encoding="utf-8") as f:
+with open("feedback_data.csv","w",newline="",encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["RespondentID","Feedback"])
 

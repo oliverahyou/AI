@@ -1,0 +1,8 @@
+Clear complaint + positive emoji = Negative
+No clear opinion + positive emoji = Neutral
+Positive statement + positive emoji = Positive
+Sarcastic emoji that reinforces criticism = Negative
+
+Positive only = Positive
+Negative only= Negative
+Positive and Negative = Neutral
