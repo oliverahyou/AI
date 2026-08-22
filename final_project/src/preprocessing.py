@@ -1,9 +1,15 @@
 import re
 import string
 import emoji
+import nltk
+
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
+nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download("wordnet")
 
 
 stop_words = set(stopwords.words("english"))
